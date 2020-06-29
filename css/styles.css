@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  min-width: 630px;
 }
 
 p {
@@ -303,11 +304,11 @@ a {
 /* Медиа запросы */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   .header {
     width: 60px;
   }
-}
+} */
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
