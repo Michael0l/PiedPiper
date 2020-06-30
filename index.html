@@ -186,12 +186,10 @@
 
 
 <script type="text/javascript">
-  $(function () {
-    $("a[href^='#']").click(function () {
-      var _href = $(this).attr("href");
-      $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
-      return false;
-    });
+  $("body").on('click', '[href*="#"]', function (e) {
+    var fixed_offset = 130;
+    $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 600);
+    e.preventDefault();
   });
 </script>
 
