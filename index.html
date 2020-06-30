@@ -11,6 +11,7 @@
     />
   <title>PiedPiper</title>
 </head>
+
 <body>
   <header class="header">
     <div class="verh">
@@ -19,12 +20,12 @@
       </div>
       <div>
         <nav class="nav">
-          <li class="name-nav"><a href="#">the problem</a></li>
+          <a href="#the_problem"><li class="name-nav">the problem</li> </a>
           <li class="name-nav">|</li>
-          <li class="name-nav"><a href="#">PiedPiperCoin</a></li>
+          <a href="#PiedPiperCoin"><li class="name-nav">PiedPiperCoin</li></a>
           <li class="name-nav">|</li>
-          <li class="name-nav"><a href="#">the team</a></li>
-        </nav>
+          <a href="#the_team"><li class="name-nav">the team</li></a>
+        </nav>  
       </div>
     </div>
   </header>
@@ -35,8 +36,8 @@
       </div>
     </div>
     <div class="content_2">
-      <div class="content_2_cr">
-        <h1 class="content_2_title">The Problem</h1>
+      <div  class="content_2_cr">
+        <h1 id="the_problem" class="content_2_title anchor">The Problem</h1>
         <div class="content_2_p">
           <p>
             Beneath the flashy homepages of your favorite sites lurk Hooli™
@@ -69,7 +70,7 @@
     </div>
     <div class="content_4">
       <div class="content_4_text">
-        <h2 class="content_4_text_glav">Introducing PiedPiperCoin</h2>
+        <h2 id="PiedPiperCoin" class="content_4_text_glav anchor" >Introducing PiedPiperCoin</h2>
         <div class="content_4_text_p">
           <h3 class="content_4_text_p_p">
             <div class="content_align">
@@ -98,7 +99,7 @@
     <div class="content_5">
       <div class="content_5_box">
         <div>
-          <h1 class="content_5_h1">The Team</h1>
+          <h1 id="the_team" class="content_5_h1 anchor" >The Team</h1>
         </div>
         <div class="content_5_box_ava">
           <div class="content_5_box_ava_box">
@@ -180,5 +181,19 @@
   </div>
   </div>
 </body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+  $(function () {
+    $("a[href^='#']").click(function () {
+      var _href = $(this).attr("href");
+      $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+      return false;
+    });
+  });
+</script>
+
 
 </html>
