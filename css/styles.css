@@ -5,7 +5,9 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  min-width: 770px;
+  min-width: 630px;
+  }
+  
 }
 
 p {
@@ -17,6 +19,7 @@ a {
   color: #ffffff !important;
   text-decoration: none;
 }
+
 
 /* Начало шапки */
 
@@ -56,6 +59,8 @@ a {
 .name-nav {
   margin-right: 8px;
 }
+
+
 
 /* Контент */
 /* Начало 1 */
@@ -159,7 +164,7 @@ a {
 
 .content_4_text {
   max-width: 1110px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   max-width: 1110px;
   margin: 0 auto;
   align-items: center;
@@ -173,14 +178,8 @@ a {
   line-height: 1;
   text-align: center;
   color: #007765;
-  margin: 0px;
-  padding: 0px;
 }
 
-/* .content_align {
-  display: flex;
-  align-self: center;
-} */
 
 .img_content_4 {
   width: 115px;
@@ -301,18 +300,34 @@ a {
   padding-bottom: 64px;
 }
 
+
+.anchor {
+  padding-top: 120px;
+	margin-top: -120px;
+	-webkit-background-clip: content-box;
+	background-clip: content-box;
+}
+
+
+
+
+
 /* Медиа запросы */
 
 /* Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px) {
+/* @media screen and (max-width: 576px) {
   .header {
-    width: 60px;
+    height: 60px;
+  }
+
+  .content_1 {
+    margin-top: 60px;
   }
 } */
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  ...;
+@media (min-width: 630px) {
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -324,4 +339,3 @@ a {
 @media (min-width: 1200px) {
   ...;
 }
-
